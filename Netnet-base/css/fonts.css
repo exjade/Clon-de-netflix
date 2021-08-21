@@ -1,5 +1,19 @@
 @font-face {
-  font-family: 'Avenir';
-  src: url('../font/AvenirNext.ttc');
+  font-family: 'Netmex';
+  src: url('../../font\Avenir Next.ttc');
+  font-weight: 400;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Netmex';
+  src: url('../../font\Avenir.ttc');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Netmex';
+  src: url('../../font\Avenir Next Condensed.ttc');
+  font-weight: 700;
+  font-style: bold;
+}
