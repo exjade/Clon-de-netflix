@@ -193,16 +193,33 @@ main {
 }
 
 .list-content {
-  /* border: var(--border4); */
-  /* display: flex; */
-  white-space: nowrap;
-  overflow-x: auto;
+  /*border: var(--border4);
+  *//*display: flex;
+  */white-space: nowrap;
   overflow-x: hidden;
+  animation: cambio 15s  infinite  forwards;
+  -webkit-animation: cambio 15s  infinite  forwards;
 }
+
+@keyframes cambio {
+	0% {margin-left: 4%;}
+	20% {margin-left: 4%;}
+	
+	25% {margin-left: 8%;}
+	45% {margin-left: 8%;}
+	
+	50% {margin-left: 10%;}
+	70% {margin-left: 10%;}
+	
+	75% {margin-left: 5%;}
+	100% {margin-left: 5%;}
+}
+
 .list-item {
   display:inline-block;
   margin-left: 10px;
 }
+
 
 .list-item:first-child {
   margin: 0;
@@ -232,5 +249,6 @@ main {
   position: fixed;
   left: 0;
   right: 0;
+  background:red;
 }
 /* END FOOTER */
