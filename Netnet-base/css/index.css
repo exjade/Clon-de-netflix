@@ -9,6 +9,8 @@
   --list-styles: none;
   --margin: 0;
   --padding: 0;
+  --border:  1px solid red ;
+  --border2: 1px solid purple;
   --subtitle1: 700 1.09375rem/normal Avenir Next; 
   --headline1: 700 1.708984375rem/normal Avenir Next; 
   --button: demi bold 0.699999988079071rem/normal Avenir Next; 
@@ -22,15 +24,24 @@ body {
  background: var(--black);
  color: var(--white);
  margin: var(--margin);
+ font-family: Netmex;
   
 }
 
 /* NAVEGATION */
 
+.header{
+  /* border:  var(--border2);  */
+  padding:15px 15px 100px;
+  position: relative;
+  z-index:2; /* Pasa encima del otro elemento */
+  background-image: linear-gradient(to bottom,  black 0%, black 60%, rgba(0,0,0,.5) 90% ,  transparent 100%);
+}
+
 .navigation {
   padding: var(--padding);
   margin: var(--margin);
-  border: 1px solid red ;
+  /* border: var(--border) ; */
   display: grid;
   grid-auto-columns: 100px;
   grid-auto-flow: column;
@@ -39,7 +50,7 @@ body {
 
 .navigation-item {
   list-style: var(--list-styles); 
-  border: 1px solid yellow ;
+  /* border: 1px solid yellow ; */
   text-align: center;
 }
 
@@ -50,20 +61,29 @@ a {
 
 /* END NAVEGATION */
 
+/* IMG */
+.featured {
+  margin-top: -80px;
+}
+.featured img {
+  height: fit-content;
+  width: 100%;
+}
+/* END IMG */
 
 
 /* START CREDITS */
 
 .credits {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--black) ;
+  background: var(--grey) ;
   font-size: 11px;
   color: var(--white);
   padding: 0.5rem 0;
   text-align: center;
 }
 .credits a {
-  color: var(--pink);
+  color: var(--red);
   text-decoration: none;
 }
 
