@@ -1,19 +1,31 @@
 @font-face {
   font-family: 'Avenir';
-  src: url('font/Avenir Next.ttc');
+  src: url('../../font/Avenir Next.ttc');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avenir2';
-  src: url('font/Avenir.ttc');
+  src: url('../../font/Avenir.ttc');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Avenir3';
-  src: url('font/Avenir Next Condensed.ttc');
+  src: url('../../font/Avenir Next Condensed.ttc');
   font-weight: 700;
   font-style: bold;
+}
+@font-face {
+  font-family: 'Netnet2';
+  src: url('../../font/NetSans_W_Md.woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Netnet1';
+  src: url('../../font/nf-icon-v1-93.woff');
+  font-weight: 400;
+  font-style: normal;
 }

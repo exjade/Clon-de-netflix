@@ -9,7 +9,7 @@
   --list-styles: none;
   --margin: 0;
   --padding: 0;
-  --border:  2px solid red ;
+  --border1:  2px solid red ;
   --border2: 2px solid purple;
   --border3: 2px solid white;
   --border4: 2px solid rgb(253, 105, 7);
@@ -28,7 +28,7 @@ body {
  /* margin: var(--margin); */
  margin: 0;
  padding: 0;
- font-family: Avenir2;
+ font-family: Netnet1;
   
 }
 
@@ -39,7 +39,7 @@ body {
   padding:15px 15px 100px;
   position: relative;
   z-index:2; /* Pasa encima del otro elemento */
-  background-image: linear-gradient(to bottom,  black 0%, black 60%, rgba(0,0,0,.5) 90% ,  transparent 100%);
+  background-image: linear-gradient(to bottom,  rgba(102, 102, 102, 0.287) 0%, black 60%, rgba(0,0,0,.5) 90% ,  transparent 100%);
 }
 
 .navigation {
@@ -81,7 +81,6 @@ a {
   justify-content: center;
   gap: 10px;
   list-style: none;
-  padding: 0;
 }
 
 .tag {
@@ -100,12 +99,12 @@ a {
 }
 
 .featured-details {
-  /* border: var(--border3); */
+  /* border: var(--border4); */
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-image:linear-gradient(to top, black 0%, transparent 100%);
+  background-image:linear-gradient(to top, black 0%, black 40%, transparent 100%);
 }
 .featured-actions {
   /* height:100px; */
@@ -115,13 +114,61 @@ a {
   padding-bottom: 1em;
 }
 .button {
-  border: var(--border2);
-}
-.button-secondary {
-  border: var(--border4);
+  /*border: var(--border2);
+  */background: white;
+  display: flex;
+  align-items: center;
+  padding: 6px 1em 6px .5em;
+  border-radius:4px;
+  border:none;
+  cursor: pointer;
+  font-family: netnet2;
 }
 
+.button::before {
+  /* border: var(--border4); */
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.button-secondary {
+  /* border: var(--border4); */
+  background: none;
+  color: white;
+  font-size: 1.1em;
+  min-width: 100px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-secondary::before {
+  display: block;
+  /* border: var(--border2); */
+  content: '';
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 5px;
+}
 /* END IMG & featured*/
+
+/* ICONS */
+
+.icon-plus::before {
+  background: url(../icons/plus.svg)
+}
+.icon-play::before {
+  background: url(../icons/play.svg)
+}
+.icon-info::before {
+  background: url(../icons/info.svg)
+}
+
+/* END ICONS */
+
 
 
 
