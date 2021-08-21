@@ -184,6 +184,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
 }
 
 .list {
@@ -196,6 +197,7 @@ main {
   /* display: flex; */
   white-space: nowrap;
   overflow-x: auto;
+  overflow-x: hidden;
 }
 .list-item {
   display:inline-block;
