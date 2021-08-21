@@ -179,13 +179,20 @@ a {
 
 /* Main */
 
+main {
+  /* border: var(--border4); */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .list {
-  border: var(--border5);
+  /* border: var(--border5); */
   padding: 0 1em;
 }
 
 .list-content {
-  border: var(--border4);
+  /* border: var(--border4); */
   /* display: flex; */
   white-space: nowrap;
   overflow-x: auto;
