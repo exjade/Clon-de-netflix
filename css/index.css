@@ -36,10 +36,10 @@ body {
 
 .header{
   /* border:  var(--border2);  */
-  padding:15px 15px 100px;
+  padding: 0px 10px 60px;
   position: relative;
   z-index:2; /* Pasa encima del otro elemento */
-  background-image: linear-gradient(to bottom,  rgba(102, 102, 102, 0.287) 0%, black 60%, rgba(0,0,0,.5) 90% ,  transparent 100%);
+  background-image: linear-gradient(to bottom,  rgba(102, 102, 102, 0.287) 0%, black 50%, rgba(0,0,0,.5) 95% ,  transparent 100%);
 }
 
 .navigation {
@@ -178,14 +178,14 @@ a {
 
 .credits {
   font-family: Avenir;
-  background: var(--grey) ;
+  /* background: var(--grey) ; */
   font-size: 11px;
   color: var(--white);
   padding: 0.5rem 0;
   text-align: center;
 }
 .credits a {
-  color: var(--red);
+  color: var(--white);
   text-decoration: none;
 }
 
